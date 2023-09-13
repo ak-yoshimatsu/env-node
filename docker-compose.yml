@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  nextjs:
+    build:
+      context: ./node
+      args:
+        - UID=${USER_ID}
+        - GID=${GROUP_ID}
+        - USERNAME=${USER_NAME}
+        - GROUPNAME=${GROUP_NAME}
+    volumes:
+      - ../src:/opt/app
+    ports:
+      - '3000:3000'
+    command: npm run dev

@@ -1,7 +1,10 @@
 # nodeを実行する環境
 
-以下でnext jsなどのアプリケーションを作成&実行
-> docker compose run --rm nextjs npm create next-app . --ts
+Next.js コンテナ作成
+> docker compose run --rm サービス名 npm create next-app . --ts
+
+React コンテナ作成
+> docker compose run --rm サービス名 npx create-react-app . --templete typescript
 
 > docker compose up -d
 

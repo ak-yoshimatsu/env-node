@@ -6,6 +6,7 @@ Next.js コンテナ作成
 React コンテナ作成
 > docker compose run --rm サービス名 npx create-react-app . --templete typescript
 
+コンテナ起動
 > docker compose up -d
 
 ## 参考サイト
